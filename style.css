@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #f6f5f7;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f0f0f0;
+}
+
+.SignForm {
+  background: #ffffff;
+  border-radius: 10px;
+  min-width: 200px;
+  min-height: 250px;
+  position: relative;
+}
+
+.form-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.sign-up-container {
+  background: white;
+  top: 0;
+  height: 80%;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+}
+
+.overlay-container {
+  position: absolute;
+  bottom: 0;
+  height: 20%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.overlay {
+  background: -webkit-linear-gradient(to right, #ff4b2b, #ff416c);
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  color: #ffffff;
+  position: relative;
+  height: 500%;
+  width: 100%;
+  top: -400%;
+}
+
+.overlay-panel {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 20%;
+}
+
+.sign-in-overlay {
+  bottom: 0;
+}
